@@ -9,13 +9,9 @@ from functools import lru_cache
 class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
     
-    # API Keys for LLM providers
-    OPENAI_API_KEY: str = Field(None, description="OpenAI API key")
-    GOOGLE_API_KEY: str = Field(None, description="Google API key for Gemini")
-    DEEPSEEK_API_KEY: str = Field(None, description="DeepSeek API key")
+    GOOGLE_API_KEY: str = Field(..., description="Google API key for Gemini")
     
     # LLM Configuration
-    LLM_PROVIDER: str = Field("claude", description="LLM provider to use (chatgpt, claude, gemini, deepseek)")
     MAX_TOKENS: int = Field(1000, description="Maximum tokens for LLM response")
     TEMPERATURE: float = Field(0.7, description="Temperature for LLM response generation")
     
