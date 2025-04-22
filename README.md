@@ -66,5 +66,4 @@ Author: Okemwag
 
 ### 🙌 Credits
 
-- [FastAPI](https://fastapi.tiangolo.com/) for the backend framework  
-- [DeepSeek](https://deepseek.com/) for the LLM API  
+- [FastAPI](https://fastapi.tiangolo.com/) for the backend framework   
